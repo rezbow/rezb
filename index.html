@@ -3,91 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reza's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Your Name's Portfolio</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+        .header h1 {
+            margin-bottom: 5px;
+            color: #2c3e50;
+        }
+        .header p {
+            font-size: 1.1em;
+            color: #7f8c8d;
+        }
+        .social-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #3498db;
+            font-weight: bold;
+        }
+        .projects {
+            margin-top: 30px;
+            text-align: left;
+        }
+        .project-card {
+            background-color: #ecf0f1;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+        .project-card h3 {
+            margin-top: 0;
+            color: #2980b9;
+        }
+        .project-card a {
+            text-decoration: none;
+            color: #34495e;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-
-<!-- Navbar -->
-<nav>
     <div class="container">
-        <div class="logo">Reza</div>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <header class="header">
+            <h1>Your Name</h1> <p>Developer | Designer | Student</p> <div class="social-links">
+                <a href="https://github.com/your-username" target="_blank">GitHub</a> <a href="https://linkedin.com/in/your-profile" target="_blank">LinkedIn</a> <a href="mailto:your.email@example.com">Email</a> </div>
+        </header>
+
+        <hr style="margin: 20px 0;">
+
+        <section class="projects">
+            <h2>Projects</h2>
+            <div class="project-card">
+                <h3><a href="https://github.com/your-username/project-one" target="_blank">Project Title One</a></h3> <p>A short description of your project. Mention the technologies you used and a key feature.</p>
+            </div>
+            <div class="project-card">
+                <h3><a href="https://github.com/your-username/project-two" target="_blank">Project Title Two</a></h3>
+                <p>Another short description of a project. What problem did it solve? What did you learn?</p>
+            </div>
+            <div class="project-card">
+                <h3><a href="https://github.com/your-username/project-three" target="_blank">Project Title Three</a></h3>
+                <p>A third project description. Keep it concise and focused on the value.</p>
+            </div>
+        </section>
     </div>
-</nav>
-
-<!-- Hero Section -->
-<header id="home">
-    <div class="hero-content">
-        <h1>Hi, I'm Reza</h1>
-        <p>Software Engineer & Web Developer</p>
-        <a href="#projects" class="btn">See My Work</a>
-    </div>
-</header>
-
-<!-- Skills Section -->
-<section id="skills">
-    <h2>My Skills</h2>
-    <div class="skills-grid">
-        <div class="skill">
-            <h3>HTML</h3>
-            <div class="bar"><span style="width: 90%"></span></div>
-        </div>
-        <div class="skill">
-            <h3>CSS</h3>
-            <div class="bar"><span style="width: 85%"></span></div>
-        </div>
-        <div class="skill">
-            <h3>JavaScript</h3>
-            <div class="bar"><span style="width: 80%"></span></div>
-        </div>
-        <div class="skill">
-            <h3>Go</h3>
-            <div class="bar"><span style="width: 70%"></span></div>
-        </div>
-    </div>
-</section>
-
-<!-- Projects Section -->
-<section id="projects">
-    <h2>Projects</h2>
-    <div class="project-grid">
-        <div class="project-card">
-            <h3>Project 1</h3>
-            <p>Short description of Project 1.</p>
-            <a href="#" target="_blank">View</a>
-        </div>
-        <div class="project-card">
-            <h3>Project 2</h3>
-            <p>Short description of Project 2.</p>
-            <a href="#" target="_blank">View</a>
-        </div>
-        <div class="project-card">
-            <h3>Project 3</h3>
-            <p>Short description of Project 3.</p>
-            <a href="#" target="_blank">View</a>
-        </div>
-    </div>
-</section>
-
-<!-- Contact Section -->
-<section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:reza@example.com">reza@example.com</a></p>
-</section>
-
-<!-- Footer -->
-<footer>
-    <p>© 2025 Reza</p>
-</footer>
-
-<script src="script.js"></script>
 </body>
 </html>
-
