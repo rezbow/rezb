@@ -5,24 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reza's Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
+<!-- Navbar -->
 <nav>
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
+    <div class="container">
+        <div class="logo">Reza</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
 </nav>
 
+<!-- Hero Section -->
 <header id="home">
-    <h1>Hi, I'm Reza</h1>
-    <p>Software Engineer & Web Developer</p>
+    <div class="hero-content">
+        <h1>Hi, I'm Reza</h1>
+        <p>Software Engineer & Web Developer</p>
+        <a href="#projects" class="btn">See My Work</a>
+    </div>
 </header>
 
+<!-- Skills Section -->
+<section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills-grid">
+        <div class="skill">
+            <h3>HTML</h3>
+            <div class="bar"><span style="width: 90%"></span></div>
+        </div>
+        <div class="skill">
+            <h3>CSS</h3>
+            <div class="bar"><span style="width: 85%"></span></div>
+        </div>
+        <div class="skill">
+            <h3>JavaScript</h3>
+            <div class="bar"><span style="width: 80%"></span></div>
+        </div>
+        <div class="skill">
+            <h3>Go</h3>
+            <div class="bar"><span style="width: 70%"></span></div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
 <section id="projects">
-    <h2>My Projects</h2>
+    <h2>Projects</h2>
     <div class="project-grid">
         <div class="project-card">
             <h3>Project 1</h3>
@@ -42,11 +76,13 @@
     </div>
 </section>
 
+<!-- Contact Section -->
 <section id="contact">
     <h2>Contact Me</h2>
     <p>Email: <a href="mailto:reza@example.com">reza@example.com</a></p>
 </section>
 
+<!-- Footer -->
 <footer>
     <p>© 2025 Reza</p>
 </footer>
