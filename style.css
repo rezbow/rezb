@@ -59,6 +59,7 @@ header {
     align-items: center;
     text-align: center;
     color: #fff;
+    padding: 0 1rem;
 }
 header h1 {
     font-size: 3rem;
@@ -81,16 +82,18 @@ header p {
     background: #0097a7;
 }
 
-/* Skills Section */
+/* Sections */
 section {
     padding: 4rem 2rem;
     max-width: 1000px;
     margin: auto;
     text-align: center;
 }
+
+/* Skills Section */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
 }
@@ -165,10 +168,27 @@ footer {
     text-align: center;
 }
 
-/* Responsive */
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    header h1 { font-size: 2.8rem; }
+    header p { font-size: 1.3rem; }
+    .skills-grid { grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); }
+}
+
 @media (max-width: 768px) {
     header h1 { font-size: 2.5rem; }
     header p { font-size: 1.2rem; }
-    nav ul { flex-direction: column; gap: 0.5rem; }
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 { font-size: 2rem; }
+    header p { font-size: 1rem; }
+    .btn { padding: 0.5rem 1rem; font-size: 0.9rem; }
+    section { padding: 3rem 1rem; }
 }
 
